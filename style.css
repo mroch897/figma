@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+:root{
+    /* Fonts */
+  --mr-font-primary: 'PT Sans', sans-serif;
+  /* Colors */
+  --mr-color-white: #fdfcfc;
+   /* Backgrounds */
+   --mr-background-principal:grey;
+   --mr-background-button:gainsboro;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'PT Sans', sans-serif;
+    font-family: var(--mr-font-primary)
 }
 
 body{
-    background-color: grey;
-    color: white;
+    background-color: var(--mr-background-principal);
+    color: var(--mr-color-white)
 }
 
 li{
@@ -18,7 +27,7 @@ li{
 
 a{
     text-decoration: none;
-    color: white;
+    color: var(--mr-color-white);
     font-size: 40x;
 }
 
@@ -101,7 +110,7 @@ h1{
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
-    background-color: gainsboro;
+    background-color: var(--mr-background-button);
 }
 
 
@@ -113,7 +122,7 @@ footer {
     gap:20px
    }
   
-  ul {
+  footer>ul {
     list-style: none;
     font-size: 15px;
     margin: 0;
@@ -122,7 +131,7 @@ footer {
     text-align: center;
   }
   
-  ul > li:first-child {
+  footer>ul > li:first-child {
     font-weight: bolder;
     font-size: 17px;
   }
