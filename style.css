@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body{
+    background-color: grey;
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 40x;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px
+}
+
+header>nav{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.list{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+
+   
+}
+
+.menu{
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+#first{
+    display: flex;
+    align-items: center;
+    min-height: 30vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+    
+}
+
+h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.info{
+    width: 30%;
+    min-width: 516px;
+}
+
+#first>img{
+    width: 20%;
+    max-width: 500px;
+    min-width: 300px;
+}
+#second{
+    display: flex;
+    align-items: center;
+    min-height: 30vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+    
+}
+
+#second>img{
+    width: 20%;
+    max-width: 500px;
+    min-width: 300px;
+}
+.localities{
+    width: 30%;
+    min-width: 516px;
+}
+
+.info>button{
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: gainsboro;
+}
+
+
+footer {
+    display: flex;
+    padding: 50px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap:20px
+   }
+  
+  ul {
+    list-style: none;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    
+    text-align: center;
+  }
+  
+  ul > li:first-child {
+    font-weight: bolder;
+    font-size: 17px;
+  }
+  
+
+
+
+@media screen and (max-width: 500px){
+
+    header>nav{
+       display: none
+    }
+
+    .menu{
+        display: block;
+    }
+}
+
+
+@media (max-width:570px){
+   h1{
+        font-size: 30px;
+    }
+
+    .info, .localities{
+        width: 100%;
+        min-width: 0px;
+    }
+
+   img{
+    margin-top: 20px;
+   }
+
+}
+
+@media (max-width: 570px) {
+    footer {
+        padding: 10px;
+      }
+      ul {
+      flex-basis: calc(50% - 20px);
+      }
+  
+  
+  }
